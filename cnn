@@ -1,0 +1,10 @@
+#!/bin/sh
+
+module load pythonpackages/3.6.0
+module load pythonpackages/3.6.0/numpy/1.15.0/gnu
+module load pythonpackages/3.6.0/pandas/0.23.4/gnu
+module load apps/pythonpackages/3.6.0/tensorflow/1.9.0/gpu
+module load apps/pythonpackages/3.6.0/keras/2.2.2/gpu
+module load lib/cudnn/7.0.3/precompiled
+
+python3 assign_3a.py $1 $2 $3
